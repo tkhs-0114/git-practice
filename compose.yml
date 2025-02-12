@@ -7,7 +7,7 @@ services:
     ports:
       - 3000:3000
     volumes:
-      - ../:/workspace/
+      - ./:/workspace/
       - node_modules:/workspace/my-app/node_modules
     # 以下必要に応じて変更
     tty: true
