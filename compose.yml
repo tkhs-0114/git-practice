@@ -9,6 +9,7 @@ services:
     volumes:
       - ./:/workspace/
       - node_modules:/workspace/my-app/node_modules
+      - node_modules2:/workspace/spotify/node_modules
     environment:
       - LOCAL_WORKSPACE_FOLDER="${localWorkspaceFolder}"
       - WATCHPACK_POLLING=true
@@ -17,3 +18,4 @@ services:
     init: true
 volumes:
   node_modules:
+  node_modules2:
